@@ -24,17 +24,19 @@ public class VRRig : MonoBehaviour
     public Transform headConstraint;
     public Vector3 headBodyOffset;
     public float turnSmoothness;
-    // Start is called before the first frame update
+    public bool rotateBody;
+
     void Start()
     {
         headBodyOffset = transform.position - headConstraint.position;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void LateUpdate()
     {
         transform.position = headConstraint.position + headBodyOffset;
-        //transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
+
+        if (rotateBody)
+            transform.forward = Vector3.Lerp(transform.forward, Vector3.ProjectOnPlane(headConstraint.up, Vector3.up).normalized, Time.deltaTime * turnSmoothness);
 
         head.Map();
         leftHand.Map();
