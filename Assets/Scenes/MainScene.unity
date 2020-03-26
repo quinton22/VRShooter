@@ -184,14 +184,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: EnableBody
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
-      propertyPath: EnableBase
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: EnableBase
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
       propertyPath: EnableExpressive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: StartWithControllers
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11437430, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: EnableHands
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1633,12 +1641,12 @@ MonoBehaviour:
   leftHand:
     vrTarget: {fileID: 954445330}
     rigTarget: {fileID: 1802867703}
-    trackingPositionOffset: {x: -0.02, y: -0.04, z: -0.07}
+    trackingPositionOffset: {x: -0.02, y: -0.03, z: -0.08}
     trackingRotationOffset: {x: -90, y: 90, z: 0}
   rightHand:
     vrTarget: {fileID: 2101527087}
     rigTarget: {fileID: 1106397140}
-    trackingPositionOffset: {x: 0.02, y: -0.04, z: -0.07}
+    trackingPositionOffset: {x: 0.02, y: -0.03, z: -0.08}
     trackingRotationOffset: {x: 90, y: -90, z: 0}
   headConstraint: {fileID: 649553142}
   headBodyOffset: {x: 0, y: 0, z: 0}
