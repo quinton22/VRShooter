@@ -31,7 +31,7 @@ public class VRRig : MonoBehaviour
         headBodyOffset = transform.position - headConstraint.position;
     }
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         transform.position = headConstraint.position + headBodyOffset;
 
